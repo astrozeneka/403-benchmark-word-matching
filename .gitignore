@@ -1,4 +1,17 @@
 *.txt
-main
+!benchmark/keywords_tsla.txt
+src/main
 main.dSYM
 .idea
+
+# benchmark: cached dataset downloaded from the DB (regenerable)
+benchmark/data/
+
+# cython/C++ build artifacts
+.venv/
+build/
+*.so
+*.egg-info/
+src/trie.cpp
+__pycache__/
+*.pyc
